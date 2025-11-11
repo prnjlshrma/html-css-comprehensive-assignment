@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="About InnovateTech Solutions — history, team, values." />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>About — InnovateTech Solutions</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-layout">
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="InnovateTech Solutions logo" width="48" height="48" />
+          <span class="brand-name">InnovateTech Solutions</span>
+        </a>
+
+        <input id="nav-toggle-about" class="nav-toggle" type="checkbox" aria-label="Toggle navigation" />
+        <label for="nav-toggle" class="hamburger"><img src="./images/nav-icon.png" alt="Navbar Icon"></label>
+        <nav class="site-nav" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="cta" href="contact.html">Get Started</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle-about" class="hamburger" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <article class="company-history">
+        <header>
+          <h1>Our Story</h1>
+          <p>From a tiny team to a multidisciplinary product agency — we grow by shipping work that matters.</p>
+        </header>
+
+        <section aria-labelledby="history-timeline">
+          <h2 id="history-timeline">Timeline</h2>
+          <ol class="timeline">
+            <li><strong>2016</strong> — Founded by engineers and designers in a co-working space.</li>
+            <li><strong>2018</strong> — First enterprise client and expanded to full-time UX research.</li>
+            <li><strong>2020</strong> — Remote-first, global hires; focused on scalable systems.</li>
+            <li><strong>2023</strong> — Rebranded as InnovateTech Solutions and launched product offerings.</li>
+          </ol>
+        </section>
+      </article>
+
+      <section id="team" class="team" aria-labelledby="team-headline">
+        <h2 id="team-headline">The Team</h2>
+        <p>Small in size, huge in output. We ship fast, safely.</p>
+
+        <div class="team-grid">
+          <article class="team-member" aria-labelledby="member-1">
+            <img src="images/member-1.avif" alt="Photo of Theo, CEO" />
+            <h3 id="member-1">Theo Holland</h3>
+            <p class="role">CEO & Co-founder</p>
+            <p>Leads product strategy and client partnerships.</p>
+          </article>
+
+          <article class="team-member" aria-labelledby="member-2">
+            <img src="images/member-2.jpeg" alt="Photo of Isabelle, CTO" />
+            <h3 id="member-2">Isabelle Wilson </h3>
+            <p class="role">CTO & Co-founder</p>
+            <p>Heads engineering, architecture, and technical hiring.</p>
+          </article>
+
+          <article class="team-member" aria-labelledby="member-3">
+            <img src="images/member-3.jpg" alt="Photo of Maya, Head of Design" />
+            <h3 id="member-3">Lucas Morris</h3>
+            <p class="role">Head of Design</p>
+            <p>Design systems, UX research, and product design leads.</p>
+          </article>
+
+          <article class="team-member" aria-labelledby="member-4">
+            <img src="images/member-4.webp" alt="Photo of Marrie, Lead Engineer" />
+            <h3 id="member-4">Marrie Steele</h3>
+            <p class="role">Lead Engineer</p>
+            <p>Performance, testing, and platform reliability.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="values" class="values" aria-labelledby="values-headline">
+        <h2 id="values-headline">Our Values</h2>
+        <ul class="values-list">
+          <li><strong>Clarity</strong> — Communicate decisions and tradeoffs openly.</li>
+          <li><strong>Empathy</strong> — Build for real humans, not analytics dashboards alone.</li>
+          <li><strong>Resilience</strong> — Systems and teams that survive real-world chaos.</li>
+          <li><strong>Craft</strong> — We sweat the details that matter for users.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="contact-info">
+          <p><strong>InnovateTech Solutions</strong></p>
+          <address>
+            InnovateTech Solutions <br>
+          42 Maple Street, <br>
+          Bristol <br>
+          BS1 5AA <br>
+          United Kingdom
+          </address>
+          <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+        </div>
+        <div class="social">
+          <p>Follow us</p>
+          <ul>
+            <li><a href="#" aria-label="Twitter (placeholder)">Twitter</a></li>
+            <li><a href="#" aria-label="LinkedIn (placeholder)">LinkedIn</a></li>
+            <li><a href="#" aria-label="GitHub (placeholder)">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="year-about"></span> InnovateTech Solutions. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year-about').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

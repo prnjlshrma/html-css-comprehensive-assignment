@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">🚀 Admin Dashboard</div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active">🏠 Dashboard</li>
+          <li>📊 Analytics</li>
+          <li>🛒 Orders</li>
+          <li>👥 Users</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </nav>
+      <div class="sidebar-user">
+        <img src="images/user-avatar.jpg" alt="User Avatar">
+        <span>Admin</span>
+      </div>
+    </aside>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1>Dashboard</h1>
+      </div>
+      <div class="header-right">
+        <input type="search" placeholder="Search..." class="search-bar">
+        <div class="notifications">🔔</div>
+        <div class="user-dropdown">
+          <span>Admin </span>
+          <ul class="dropdown-menu">
+            <li>Profile</li>
+            <li>Settings</li>
+            <li>Logout</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+
+      <!-- Statistics Cards -->
+      <section class="stats-cards stats-grid">
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <div class="card-content">
+            <h2>$24,500</h2>
+            <p>Revenue</p>
+            <span class="change up">+12%</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <div class="card-content">
+            <h2>1,250</h2>
+            <p>Users</p>
+            <span class="change up">+8%</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛒</div>
+          <div class="card-content">
+            <h2>320</h2>
+            <p>Orders</p>
+            <span class="change down">-3%</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">📈</div>
+          <div class="card-content">
+            <h2>18%</h2>
+            <p>Growth</p>
+            <span class="change up">+5%</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Tables -->
+      <section class="tables-section">
+        <h2>Recent Orders</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1001</td><td>John Doe</td><td>Laptop</td><td>$1200</td><td><span class="badge success">Completed</span></td><td>2025-11-01</td>
+              </tr>
+              <tr>
+                <td>#1002</td><td>Jane Smith</td><td>Phone</td><td>$800</td><td><span class="badge warning">Pending</span></td><td>2025-11-02</td>
+              </tr>
+              <tr>
+                <td>#1003</td><td>Mike Johnson</td><td>Tablet</td><td>$400</td><td><span class="badge danger">Cancelled</span></td><td>2025-11-03</td>
+              </tr>
+              <tr>
+                <td>#1004</td><td>Anna Lee</td><td>Headphones</td><td>$120</td><td><span class="badge success">Completed</span></td><td>2025-11-04</td>
+              </tr>
+              <tr>
+                <td>#1005</td><td>Paul Brown</td><td>Keyboard</td><td>$60</td><td><span class="badge success">Completed</span></td><td>2025-11-05</td>
+              </tr>
+              <tr>
+                <td>#1006</td><td>Linda Green</td><td>Monitor</td><td>$250</td><td><span class="badge warning">Pending</span></td><td>2025-11-06</td>
+              </tr>
+              <tr>
+                <td>#1007</td><td>Sam White</td><td>Mouse</td><td>$35</td><td><span class="badge success">Completed</span></td><td>2025-11-07</td>
+              </tr>
+              <tr>
+                <td>#1008</td><td>Olivia Black</td><td>Chair</td><td>$150</td><td><span class="badge danger">Cancelled</span></td><td>2025-11-08</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Quick Actions Form -->
+      <section class="quick-actions">
+        <h2>Add New Product</h2>
+        <form>
+          <fieldset>
+            <legend>Product Information</legend>
+            <label>Product Name <input type="text" required></label>
+            <label>Category 
+              <select>
+                <option>Electronics</option>
+                <option>Clothing</option>
+                <option>Accessories</option>
+              </select>
+            </label>
+            <label>Price <input type="number" min="0" step="0.01"></label>
+            <label>SKU/Code <input type="text" pattern="[A-Z0-9]{3,10}"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Inventory</legend>
+            <label>Stock Quantity <input type="number"></label>
+            <label>Reorder Level <input type="number"></label>
+            <label>Supplier
+              <select>
+                <option>Supplier A</option>
+                <option>Supplier B</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Media</legend>
+            <label>Product Image <input type="file" accept="image/*"></label>
+            <label class="checkbox-label">
+            <input type="checkbox"> Featured Product
+            </label>
+            <label>Active Status
+              <input type="radio" name="status" value="active" checked> Active
+              <input type="radio" name="status" value="inactive"> Inactive
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit">Save</button>
+            <button type="submit">Save & Continue</button>
+            <button type="reset">Cancel</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

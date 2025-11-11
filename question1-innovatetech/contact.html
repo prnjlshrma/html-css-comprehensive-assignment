@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Contact InnovateTech Solutions — get in touch, request a quote, or send requirements." />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Contact — InnovateTech Solutions</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="page-layout">
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="InnovateTech Solutions logo" width="48" height="48" />
+          <span class="brand-name">InnovateTech Solutions</span>
+        </a>
+
+        <input id="nav-toggle-contact" class="nav-toggle" type="checkbox" aria-label="Toggle navigation" />
+        <label for="nav-toggle" class="hamburger"><img src="./images/nav-icon.png" alt="Navbar Icon"></label>
+        <nav class="site-nav" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a class="cta" href="#contact-form">Get Started</a></li>
+          </ul>
+        </nav>
+
+        <label for="nav-toggle-contact" class="hamburger" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <section class="contact-info" aria-labelledby="contact-head">
+        <h1 id="contact-head">Get in touch</h1>
+
+        <address>
+          <strong>Office</strong><br />
+          220 Innovation Drive, Tech Park, Bangalore, India
+        </address>
+
+        <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+        <p>Email: <a href="mailto:hello@innovatetech.example">hello@innovatetech.example</a></p>
+      </section>
+
+      <section class="office-hours" aria-labelledby="hours-head">
+        <h2 id="hours-head">Office Hours</h2>
+        <table>
+          <caption>Office hours (local)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Open</th>
+              <th scope="col">Close</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Monday</th><td>09:30</td><td>18:00</td></tr>
+            <tr><th scope="row">Tuesday</th><td>09:30</td><td>18:00</td></tr>
+            <tr><th scope="row">Wednesday</th><td>09:30</td><td>18:00</td></tr>
+            <tr><th scope="row">Thursday</th><td>09:30</td><td>18:00</td></tr>
+            <tr><th scope="row">Friday</th><td>09:30</td><td>18:00</td></tr>
+            <tr><th scope="row">Saturday</th><td>10:00</td><td>14:00</td></tr>
+            <tr><th scope="row">Sunday</th><td colspan="2">Closed</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact-form" class="contact-form-section" aria-labelledby="form-head">
+        <h2 id="form-head">Request a Quote</h2>
+
+        <form novalidate method="post" action="#" enctype="multipart/form-data" class="contact-form" aria-label="Contact form">
+          <!-- Personal Information -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name <span aria-hidden="true">*</span></label>
+            <input id="fullname" name="fullname" type="text" required />
+
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" />
+
+            <label for="company">Company / Organization</label>
+            <input id="company" name="company" type="text" />
+          </fieldset>
+
+          <!-- Inquiry Details -->
+          <fieldset>
+            <legend>Inquiry Details</legend>
+
+            <label for="service">Service Interest</label>
+            <select id="service" name="service">
+              <option>Web Development</option>
+              <option>Mobile Apps</option>
+              <option>Consulting</option>
+              <option>Other</option>
+            </select>
+
+            <fieldset class="inline-group">
+              <legend>Project Timeline</legend>
+              <label><input type="radio" name="timeline" value="asap" /> ASAP</label>
+              <label><input type="radio" name="timeline" value="1-3" /> 1-3 months</label>
+              <label><input type="radio" name="timeline" value="3-6" /> 3-6 months</label>
+              <label><input type="radio" name="timeline" value="6+" /> 6+ months</label>
+            </fieldset>
+
+            <label for="budget">Budget Range</label>
+            <div class="range-wrap">
+              <input id="budget" name="budget" type="range" min="0" max="100" value="30" />
+              <div class="range-labels">
+                <span>Low</span><span>High</span>
+              </div>
+            </div>
+
+            <fieldset class="inline-group">
+              <legend>Project Type</legend>
+              <label><input type="checkbox" name="ptype" value="new" /> New Website</label>
+              <label><input type="checkbox" name="ptype" value="redesign" /> Redesign</label>
+              <label><input type="checkbox" name="ptype" value="mobile" /> Mobile App</label>
+              <label><input type="checkbox" name="ptype" value="ecom" /> E-commerce</label>
+              <label><input type="checkbox" name="ptype" value="other" /> Other</label>
+            </fieldset>
+          </fieldset>
+
+          <!-- Message -->
+          <fieldset>
+            <legend>Message</legend>
+            <label for="description">Project Description <span aria-hidden="true">*</span></label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="requirements">Upload Requirements (docs only)</label>
+            <input id="requirements" name="requirements" type="file" accept=".pdf,.doc,.docx,.txt" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Contact Preferences</legend>
+            <label><input type="radio" name="pref" value="email" checked /> Email</label>
+            <label><input type="radio" name="pref" value="phone" /> Phone</label>
+            <label><input type="radio" name="pref" value="video" /> Video Call</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Terms</legend>
+            <label><input type="checkbox" id="agree" name="agree" required /> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</label>
+            <label><input type="checkbox" name="subscribe" /> Subscribe to our newsletter</label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-outline">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="contact-info">
+          <p><strong>InnovateTech Solutions</strong></p>
+          <address>
+            InnovateTech Solutions<br>
+          42 Maple Street, <br>
+          Bristol <br>
+          BS1 5AA <br>
+          United Kingdom
+          </address>
+        </div>
+
+        <div class="social">
+          <p>Follow us</p>
+          <ul>
+            <li><a href="#" aria-label="Twitter (placeholder)">Twitter</a></li>
+            <li><a href="#" aria-label="LinkedIn (placeholder)">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; <span id="year-contact"></span> InnovateTech Solutions. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year-contact').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
